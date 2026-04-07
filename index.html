@@ -1,0 +1,1459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gau Veda | Premium Gau Pravesh Service in DFW</title>
+    <meta
+      name="description"
+      content="Premium Gau Pravesh and sacred cow blessing service for Hindu families in the DFW area. Respectful planning, calm execution, and clear family-first guidance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f6efe4;
+        --bg-soft: #fbf6ef;
+        --paper: #fffaf4;
+        --surface: rgba(255, 255, 255, 0.82);
+        --surface-strong: #fffdf9;
+        --ink: #251f1a;
+        --ink-soft: #52463a;
+        --muted: #766657;
+        --line: rgba(112, 87, 60, 0.14);
+        --saffron: #c88a2a;
+        --vermillion: #a34f44;
+        --forest: #1f5b3c;
+        --forest-deep: #173f2b;
+        --gold-wash: rgba(200, 138, 42, 0.13);
+        --green-wash: rgba(31, 91, 60, 0.1);
+        --shadow-lg: 0 24px 60px rgba(41, 31, 21, 0.12);
+        --shadow-md: 0 18px 40px rgba(41, 31, 21, 0.08);
+        --radius-xl: 28px;
+        --radius-lg: 20px;
+        --radius-md: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(900px 450px at 0% 0%, rgba(200, 138, 42, 0.16), transparent 52%),
+          radial-gradient(700px 320px at 100% 8%, rgba(31, 91, 60, 0.10), transparent 45%),
+          linear-gradient(180deg, #f7f0e6 0%, #fbf8f3 48%, #f7f1e9 100%);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      p {
+        margin: 0;
+        color: var(--ink-soft);
+      }
+
+      .accent-saffron {
+        color: var(--saffron);
+      }
+
+      .accent-vermillion {
+        color: var(--vermillion);
+      }
+
+      .accent-forest {
+        color: var(--forest);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        line-height: 1.08;
+        font-family: "Playfair Display", serif;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+      }
+
+      .container {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(10px);
+        background: rgba(251, 246, 239, 0.76);
+        border-bottom: 1px solid rgba(123, 92, 59, 0.08);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        min-height: 74px;
+      }
+
+      .brand-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      .brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--forest-deep);
+      }
+
+      .brand-sub {
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .btn {
+        appearance: none;
+        border: none;
+        border-radius: 999px;
+        padding: 0.9rem 1.15rem;
+        font-weight: 700;
+        font-family: inherit;
+        cursor: pointer;
+        transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn-primary {
+        color: #fff;
+        background: linear-gradient(135deg, var(--forest) 0%, var(--saffron) 100%);
+        box-shadow: 0 14px 26px rgba(31, 91, 60, 0.22);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.7);
+        color: var(--forest-deep);
+        border: 1px solid rgba(95, 72, 49, 0.14);
+      }
+
+      .hero {
+        position: relative;
+        padding: 46px 0 56px;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 520px;
+        background:
+          radial-gradient(700px 260px at 10% 12%, rgba(200, 138, 42, 0.18), transparent 52%),
+          radial-gradient(560px 220px at 88% 18%, rgba(163, 79, 68, 0.12), transparent 40%),
+          linear-gradient(180deg, rgba(255, 247, 235, 0.55), rgba(255,255,255,0));
+        pointer-events: none;
+      }
+
+      .hero-layout {
+        display: grid;
+        grid-template-columns: 1.04fr 0.96fr;
+        gap: 1.2rem;
+        align-items: stretch;
+      }
+
+      .hero-copy {
+        padding: 1.2rem 0 0.8rem;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #fefced, #fff4df);
+        border: 1px solid rgba(215, 153, 104, 0.24);
+        padding: 0.48rem 0.75rem;
+        font-size: 0.83rem;
+        font-weight: 700;
+        color: var(--forest);
+        margin-bottom: 1rem;
+        box-shadow: 0 12px 22px rgba(53, 37, 23, 0.06);
+      }
+
+      .eyebrow-stars {
+        color: var(--saffron);
+        letter-spacing: 0.08em;
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: clamp(2.55rem, 5.3vw, 5.1rem);
+        max-width: 12ch;
+        background: linear-gradient(135deg, var(--forest-deep) 0%, #4e3326 52%, var(--vermillion) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-lead {
+        margin-top: 1.2rem;
+        font-size: 1.08rem;
+        max-width: 58ch;
+        color: #5a4634;
+      }
+
+      .hero-note {
+        margin-top: 1rem;
+        font-size: 0.98rem;
+        color: var(--muted);
+        max-width: 56ch;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 1.6rem;
+      }
+
+      .hero-values {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+        margin-top: 1rem;
+      }
+
+      .hero-value {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.48rem;
+        border-radius: 999px;
+        padding: 0.62rem 0.88rem;
+        background: linear-gradient(180deg, #fefced, #fef7eb);
+        border: 1px solid rgba(215, 153, 104, 0.26);
+        color: #6b533f;
+        font-size: 0.88rem;
+        font-weight: 700;
+        box-shadow: 0 12px 24px rgba(53, 37, 23, 0.06);
+      }
+
+      .hero-value::before {
+        content: "✓";
+        color: #d79968;
+        font-size: 0.86rem;
+        font-weight: 900;
+      }
+
+      .hero-trust {
+        margin-top: 1.35rem;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.8rem;
+        max-width: 760px;
+      }
+
+      .hero-trust.compact {
+        grid-template-columns: repeat(3, max-content);
+        max-width: none;
+        gap: 0.6rem;
+      }
+
+      .trust-chip {
+        padding: 0.95rem 1rem;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.66);
+        border: 1px solid rgba(122, 93, 61, 0.12);
+        box-shadow: var(--shadow-md);
+      }
+
+      .trust-chip strong {
+        display: block;
+        font-size: 0.93rem;
+        color: var(--forest-deep);
+      }
+
+      .trust-chip span {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.88rem;
+        color: var(--muted);
+      }
+
+      .trust-chip.compact {
+        padding: 0.72rem 0.9rem;
+        border-radius: 999px;
+        box-shadow: none;
+        background: rgba(255,255,255,0.78);
+      }
+
+      .trust-chip.compact strong,
+      .trust-chip.compact span {
+        display: inline;
+        font-size: 0.86rem;
+      }
+
+      .trust-chip.compact span {
+        margin-top: 0;
+        color: var(--muted);
+      }
+
+      .hero-visual {
+        position: relative;
+        min-height: 680px;
+        border-radius: 34px;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(248, 230, 197, 0.78) 0%, rgba(255, 249, 240, 0.96) 100%),
+          radial-gradient(circle at 20% 20%, rgba(200, 138, 42, 0.18), transparent 34%),
+          radial-gradient(circle at 80% 18%, rgba(31, 91, 60, 0.16), transparent 32%),
+          linear-gradient(135deg, #f6ead6 0%, #fff9ef 100%);
+        border: 1px solid rgba(133, 94, 54, 0.12);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        inset: 18px;
+        border-radius: 26px;
+        border: 1px solid rgba(163, 79, 68, 0.18);
+        pointer-events: none;
+      }
+
+      .visual-photo {
+        position: absolute;
+        inset: 26px 26px 180px 26px;
+        border-radius: 26px;
+        background:
+          linear-gradient(180deg, rgba(246, 235, 214, 0.88), rgba(255, 250, 244, 0.95)),
+          repeating-linear-gradient(135deg, rgba(200, 138, 42, 0.05), rgba(200, 138, 42, 0.05) 10px, rgba(31, 91, 60, 0.04) 10px, rgba(31, 91, 60, 0.04) 20px);
+        display: grid;
+        place-items: center;
+        color: #6c5a49;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        text-align: center;
+        padding: 0 2rem;
+      }
+
+      .visual-card {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(122, 93, 61, 0.1);
+        box-shadow: var(--shadow-md);
+        backdrop-filter: blur(10px);
+      }
+
+      .visual-card.top {
+        top: 36px;
+        right: 36px;
+        width: 220px;
+        border-radius: 24px;
+        padding: 1rem;
+      }
+
+      .visual-card.bottom {
+        left: 34px;
+        right: 34px;
+        bottom: 34px;
+        border-radius: 24px;
+        padding: 1.1rem 1.1rem 1rem;
+      }
+
+      .visual-label {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--vermillion);
+        font-weight: 800;
+      }
+
+      .visual-title {
+        margin-top: 0.45rem;
+        font-family: "Playfair Display", serif;
+        font-size: 1.15rem;
+        color: var(--forest-deep);
+      }
+
+      .visual-text {
+        margin-top: 0.35rem;
+        font-size: 0.92rem;
+        color: var(--muted);
+      }
+
+      .visual-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+        margin-top: 0.95rem;
+      }
+
+      .visual-stat {
+        padding-top: 0.75rem;
+        border-top: 1px solid rgba(118, 102, 87, 0.12);
+      }
+
+      .visual-stat strong {
+        display: block;
+        font-size: 0.98rem;
+        color: var(--ink);
+      }
+
+      .visual-stat span {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .section {
+        padding: 64px 0;
+      }
+
+      .split-band {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 1.2rem;
+        align-items: stretch;
+      }
+
+      .panel {
+        position: relative;
+        border-radius: var(--radius-xl);
+        padding: 2rem;
+        overflow: hidden;
+      }
+
+      .panel.light {
+        background: linear-gradient(180deg, rgba(255, 253, 249, 0.95), rgba(255, 249, 241, 0.95));
+        border: 1px solid rgba(122, 93, 61, 0.1);
+        box-shadow: var(--shadow-md);
+      }
+
+      .panel.dark {
+        background:
+          radial-gradient(circle at 80% 20%, rgba(200, 138, 42, 0.16), transparent 28%),
+          linear-gradient(180deg, #20452f 0%, #183726 100%);
+        color: #f6efe5;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .panel.dark h2,
+      .panel.dark h3,
+      .panel.dark p,
+      .panel.dark li,
+      .panel.dark .kicker {
+        color: inherit;
+      }
+
+      .kicker {
+        display: inline-block;
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--vermillion);
+        margin-bottom: 0.8rem;
+      }
+
+      .section h2 {
+        font-size: clamp(1.9rem, 3vw, 3rem);
+        max-width: 12ch;
+      }
+
+      .section p.leadish {
+        margin-top: 1rem;
+        font-size: 1rem;
+        max-width: 58ch;
+      }
+
+      .ritual-points {
+        display: grid;
+        gap: 0.9rem;
+        margin-top: 1.3rem;
+      }
+
+      .ritual-point {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 0.8rem;
+        align-items: start;
+      }
+
+      .ritual-badge {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, rgba(200, 138, 42, 0.18), rgba(163, 79, 68, 0.08));
+        display: grid;
+        place-items: center;
+        font-size: 1rem;
+        color: var(--forest);
+        border: 1px solid rgba(130, 101, 67, 0.12);
+      }
+
+      .ritual-point strong {
+        display: block;
+        font-size: 1rem;
+        color: var(--ink);
+      }
+
+      .ritual-point span {
+        display: block;
+        margin-top: 0.2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .dark-grid {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.4rem;
+      }
+
+      .dark-row {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 0.7rem;
+      }
+
+      .dark-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        margin-top: 0.4rem;
+        background: linear-gradient(135deg, var(--saffron), #f7d08d);
+        box-shadow: 0 0 0 6px rgba(247, 208, 141, 0.08);
+      }
+
+      .process-wrap {
+        display: grid;
+        grid-template-columns: 0.88fr 1.12fr;
+        gap: 1.2rem;
+        align-items: start;
+      }
+
+      .process-side {
+        padding: 0.6rem 0;
+      }
+
+      .process-stack {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .process-card {
+        position: relative;
+        border-radius: 26px;
+        padding: 1.4rem 1.35rem 1.3rem;
+        background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,249,242,0.95));
+        border: 1px solid rgba(123, 92, 59, 0.1);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+      }
+
+      .process-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 5px;
+        background: linear-gradient(180deg, var(--saffron), var(--vermillion));
+      }
+
+      .process-top {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .process-number {
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        background: linear-gradient(180deg, rgba(200,138,42,0.16), rgba(31,91,60,0.08));
+        color: var(--forest);
+      }
+
+      .process-card h3 {
+        font-size: 1.4rem;
+        color: #2f261f;
+      }
+
+      .process-card p {
+        font-size: 0.98rem;
+        color: var(--ink-soft);
+      }
+
+      .editorial-band {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+      }
+
+      .image-panel {
+        position: relative;
+        min-height: 560px;
+        border-radius: 34px;
+        background:
+          linear-gradient(180deg, rgba(255, 247, 235, 0.92), rgba(247, 236, 216, 0.96)),
+          radial-gradient(circle at 20% 20%, rgba(200,138,42,0.15), transparent 28%),
+          linear-gradient(135deg, #f9edd8 0%, #fff8ef 100%);
+        border: 1px solid rgba(133, 94, 54, 0.12);
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+      }
+
+      .image-panel::before {
+        content: "Hero-quality photography belongs here";
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        padding: 0 2rem;
+        text-align: center;
+        color: #6c5948;
+        font-weight: 600;
+      }
+
+      .image-panel::after {
+        content: "";
+        position: absolute;
+        inset: 20px;
+        border-radius: 24px;
+        border: 1px solid rgba(31, 91, 60, 0.16);
+      }
+
+      .editorial-copy {
+        display: grid;
+        gap: 1rem;
+        align-content: start;
+        padding: 0.5rem 0;
+      }
+
+      .editorial-list {
+        display: grid;
+        gap: 0.9rem;
+        margin-top: 0.4rem;
+      }
+
+      .editorial-item {
+        padding: 1rem 1rem 1rem 1.15rem;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.74);
+        border: 1px solid rgba(123, 92, 59, 0.1);
+      }
+
+      .editorial-item strong {
+        display: block;
+        color: var(--forest-deep);
+        font-size: 1rem;
+      }
+
+      .editorial-item span {
+        display: block;
+        margin-top: 0.2rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .reviews-section {
+        position: relative;
+      }
+
+      .reviews-section::before {
+        content: "";
+        position: absolute;
+        inset: 20px 0 auto;
+        height: 220px;
+        background:
+          radial-gradient(420px 160px at 12% 30%, rgba(200, 138, 42, 0.14), transparent 55%),
+          radial-gradient(360px 150px at 86% 40%, rgba(163, 79, 68, 0.12), transparent 48%);
+        pointer-events: none;
+      }
+
+      .reviews-head {
+        max-width: 760px;
+        margin-bottom: 1.4rem;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .review-card {
+        position: relative;
+        border-radius: 26px;
+        padding: 1.35rem;
+        overflow: hidden;
+        background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,245,229,0.98));
+        border: 1px solid rgba(123, 92, 59, 0.12);
+        box-shadow: var(--shadow-md);
+      }
+
+      .review-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 5px;
+        background: linear-gradient(180deg, var(--saffron), var(--vermillion));
+      }
+
+      .review-stars {
+        color: #d79968;
+        letter-spacing: 0.12em;
+        font-size: 0.98rem;
+        margin-bottom: 0.8rem;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.65);
+      }
+
+      .review-copy {
+        color: #4d4035;
+        font-size: 0.97rem;
+      }
+
+      .review-meta {
+        margin-top: 1rem;
+        padding-top: 0.85rem;
+        border-top: 1px solid rgba(123, 92, 59, 0.1);
+      }
+
+      .review-meta strong {
+        display: block;
+        color: var(--forest-deep);
+        font-size: 0.94rem;
+      }
+
+      .review-meta span {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .service-band {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 1.2rem;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 1.2rem;
+      }
+
+      .service-card {
+        padding: 1.15rem;
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,246,233,0.96));
+        border: 1px solid rgba(123, 92, 59, 0.1);
+        box-shadow: var(--shadow-md);
+      }
+
+      .service-card h3 {
+        font-size: 1.08rem;
+        color: #7b3228;
+      }
+
+      .service-card ul {
+        margin: 0.7rem 0 0;
+        padding-left: 1.15rem;
+        color: var(--muted);
+      }
+
+      .service-card li + li {
+        margin-top: 0.4rem;
+      }
+
+      .service-area {
+        border-radius: 30px;
+        padding: 1.9rem;
+        background: linear-gradient(180deg, #1e4c33 0%, #183926 100%);
+        color: #f6ede1;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .service-area h3,
+      .service-area p,
+      .service-area strong {
+        color: inherit;
+      }
+
+      .area-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1rem;
+      }
+
+      .area-tag {
+        padding: 0.55rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.12);
+        font-size: 0.9rem;
+      }
+
+      .cta-section {
+        padding: 74px 0 84px;
+      }
+
+      .cta-shell {
+        position: relative;
+        border-radius: 36px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 85% 15%, rgba(200,138,42,0.18), transparent 25%),
+          radial-gradient(circle at 18% 85%, rgba(163,79,68,0.10), transparent 24%),
+          linear-gradient(135deg, #fff4e8 0%, #fffdf9 55%, #f6ecdb 100%);
+        border: 1px solid rgba(123, 92, 59, 0.12);
+        box-shadow: var(--shadow-lg);
+        padding: 2rem;
+      }
+
+      .cta-layout {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 1.2rem;
+        align-items: start;
+      }
+
+      .faq-stack {
+        display: grid;
+        gap: 0.85rem;
+        margin-top: 1rem;
+      }
+
+      .faq-item {
+        border-radius: 18px;
+        background: rgba(255,255,255,0.74);
+        border: 1px solid rgba(123, 92, 59, 0.1);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        text-align: left;
+        font: inherit;
+        font-weight: 700;
+        color: var(--ink);
+        padding: 1rem 1.05rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .faq-question::after {
+        content: "+";
+        font-size: 1.1rem;
+        color: var(--vermillion);
+      }
+
+      .faq-item.open .faq-question::after {
+        content: "−";
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease;
+        padding: 0 1.05rem;
+      }
+
+      .faq-item.open .faq-answer {
+        max-height: 180px;
+        padding: 0 1.05rem 1rem;
+      }
+
+      .lead-form {
+        background: rgba(255,255,255,0.84);
+        border: 1px solid rgba(123, 92, 59, 0.1);
+        box-shadow: var(--shadow-md);
+        border-radius: 28px;
+        padding: 1.45rem;
+      }
+
+      .form-head {
+        margin-bottom: 1rem;
+      }
+
+      .form-head h3 {
+        font-size: 1.7rem;
+      }
+
+      form {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .field-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.38rem;
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: #3d3026;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        border-radius: 14px;
+        border: 1px solid rgba(118, 102, 87, 0.18);
+        background: rgba(255,255,255,0.96);
+        padding: 0.86rem 0.92rem;
+        font: inherit;
+        color: var(--ink);
+      }
+
+      textarea {
+        min-height: 110px;
+        resize: vertical;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: rgba(200, 138, 42, 0.8);
+        box-shadow: 0 0 0 4px rgba(200, 138, 42, 0.12);
+      }
+
+      .micro-note {
+        margin-top: 0.5rem;
+        font-size: 0.86rem;
+        color: var(--muted);
+      }
+
+      footer {
+        padding: 26px 0 44px;
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 980px) {
+        .hero-layout,
+        .split-band,
+        .process-wrap,
+        .editorial-band,
+        .service-band,
+        .cta-layout,
+        .field-row,
+        .hero-trust,
+        .reviews-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-visual,
+        .image-panel {
+          min-height: 520px;
+        }
+
+        h1 {
+          max-width: 14ch;
+        }
+      }
+
+      @media (max-width: 700px) {
+        .topbar-inner {
+          padding: 12px 0;
+          align-items: flex-start;
+        }
+
+        .nav-actions {
+          width: 100%;
+          flex-wrap: wrap;
+        }
+
+        .nav-actions .btn {
+          flex: 1 1 100%;
+        }
+
+        .hero {
+          padding-top: 26px;
+        }
+
+        .hero-copy {
+          padding-top: 0.4rem;
+        }
+
+        h1 {
+          font-size: clamp(2.1rem, 12vw, 3.2rem);
+        }
+
+        .panel,
+        .cta-shell,
+        .lead-form {
+          padding: 1.25rem;
+        }
+
+        .visual-photo {
+          inset: 18px 18px 170px 18px;
+        }
+
+        .visual-card.top,
+        .visual-card.bottom {
+          left: 18px;
+          right: 18px;
+          width: auto;
+        }
+
+        .visual-card.top {
+          top: auto;
+          bottom: 130px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand-wrap">
+          <div class="brand">Gau Veda</div>
+          <div class="brand-sub">Premium Gau Pravesh service for DFW families</div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="tel:+19725490000">Call</a>
+          <a class="btn btn-secondary" href="#process">How it works</a>
+          <a class="btn btn-primary" href="#quote">Check availability</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-stars">★★★★★</span> Serving Frisco, Plano, Prosper & nearby DFW communities</div>
+            <h1>Bring blessings home with calm, care, and respect.</h1>
+            <p class="hero-lead">
+              Invite the divine energy of our gentle Brahma Cow. Perfect for Griha Pravesh and Vastu Shanti ceremonies.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#quote">Check Availability</a>
+              <a class="btn btn-secondary" href="#story">See how the service works</a>
+            </div>
+            <div class="hero-values" aria-label="Key service highlights">
+              <div class="hero-value">Pure Brahma Breed</div>
+              <div class="hero-value">Gentle Cow</div>
+              <div class="hero-value">No-Mess Guarantee</div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Hero composition placeholder">
+            <div class="visual-photo">Replace with a warm, premium image of a family-ready home entrance and respectful ceremony setup.</div>
+            <div class="visual-card top">
+              <div class="visual-label">What families want</div>
+              <div class="visual-title">Tradition that still feels manageable</div>
+              <div class="visual-text">A blessing that feels meaningful, not stressful.</div>
+            </div>
+            <div class="visual-card bottom">
+              <div class="visual-label">Why families book</div>
+              <div class="visual-title">One Cow. Many Blessings.</div>
+              <div class="visual-stats">
+                <div class="visual-stat">
+                  <strong>For the home</strong>
+                  <span>Auspicious beginnings</span>
+                </div>
+                <div class="visual-stat">
+                  <strong>For the family</strong>
+                  <span>Comfort and confidence</span>
+                </div>
+                <div class="visual-stat">
+                  <strong>For the moment</strong>
+                  <span>Handled with care</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="story">
+        <div class="container split-band">
+          <article class="panel light">
+            <div class="kicker">What Gau Veda is</div>
+            <h2>One Cow. Many Blessings.</h2>
+            <p class="leadish">
+              Gau Veda is for families who want this tradition to feel proper, peaceful, and well cared for.
+            </p>
+            <div class="ritual-points">
+              <div class="ritual-point">
+                <div class="ritual-badge">◌</div>
+                <div>
+                  <strong>Respect for the ritual</strong>
+                  <span>The experience is handled with warmth, seriousness, and cultural care.</span>
+                </div>
+              </div>
+              <div class="ritual-point">
+                <div class="ritual-badge">✦</div>
+                <div>
+                  <strong>Comfort for the family</strong>
+                  <span>We help make the day feel easier for parents, children, elders, and guests.</span>
+                </div>
+              </div>
+              <div class="ritual-point">
+                <div class="ritual-badge">▢</div>
+                <div>
+                  <strong>Care for the home</strong>
+                  <span>Preparation, timing, and household flow are considered before the day arrives.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel dark">
+            <div class="kicker">Why families choose this</div>
+            <h2>Peace of mind for an important day.</h2>
+            <div class="dark-grid">
+              <div class="dark-row">
+                <div class="dark-dot"></div>
+                <div>
+                  <strong>They want the blessing to feel respectful and right</strong>
+                </div>
+              </div>
+              <div class="dark-row">
+                <div class="dark-dot"></div>
+                <div>
+                  <strong>They want their home and guests to be cared for thoughtfully</strong>
+                </div>
+              </div>
+              <div class="dark-row">
+                <div class="dark-dot"></div>
+                <div>
+                  <strong>They want the day to feel smooth, not rushed or awkward</strong>
+                </div>
+              </div>
+            </div>
+            <p class="leadish" style="margin-top: 1.25rem; color: rgba(246, 239, 229, 0.88);">
+              What makes the service feel premium is not extra language. It is the feeling that everything is being handled properly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="container process-wrap">
+          <div class="process-side">
+            <div class="kicker">Stress-Free Blessings</div>
+            <h2>We handle the mess and the logistics. You focus on the Mantras.</h2>
+            <p class="leadish">
+              We keep the process simple so your family can stay focused on the blessing, not the logistics.
+            </p>
+          </div>
+          <div class="process-stack">
+            <article class="process-card">
+              <div class="process-top">
+                <div class="process-number">01</div>
+                <h3>Tell us about your day</h3>
+              </div>
+              <p>
+                Share your date, location, and anything important about your home or family. We will let you know what is possible and what to expect.
+              </p>
+            </article>
+            <article class="process-card">
+              <div class="process-top">
+                <div class="process-number">02</div>
+                <h3>Stress-Free Blessings</h3>
+              </div>
+              <p>
+                We handle the mess and the logistics. You focus on your family, your prayers, and the meaning of the day.
+              </p>
+            </article>
+            <article class="process-card">
+              <div class="process-top">
+                <div class="process-number">03</div>
+                <h3>A calm and respectful arrival</h3>
+              </div>
+              <p>
+                On the day itself, everything should feel steady, respectful, and well guided from arrival to blessing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container editorial-band">
+          <div class="image-panel"></div>
+          <div class="editorial-copy">
+            <div class="kicker">What matters most</div>
+            <h2>Families should feel at ease before the blessing even begins.</h2>
+            <p class="leadish">
+              The details matter: how the day feels, how the home is respected, and how comfortable everyone feels in the moment.
+            </p>
+            <div class="editorial-list">
+              <div class="editorial-item">
+                <strong>Children, elders, and guests should feel comfortable</strong>
+                <span>The blessing should feel welcoming, not tense or hard to manage.</span>
+              </div>
+              <div class="editorial-item">
+                <strong>Your home should be treated with care</strong>
+                <span>Planning ahead helps protect the entryway, the pace of the event, and everyone’s peace of mind.</span>
+              </div>
+              <div class="editorial-item">
+                <strong>The experience should feel warm and well handled</strong>
+                <span>That quiet confidence is what people remember.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="container">
+          <div class="reviews-head">
+            <div class="kicker">Blessed Families</div>
+            <h2>Words from families who wanted the day to feel right.</h2>
+            <p class="leadish">
+              The blessing matters. But so does how the family feels before, during, and after it is done.
+            </p>
+          </div>
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-copy">
+                “What we loved most was how calm everything felt. My parents felt respected, the children were comfortable, and the whole experience felt very natural.”
+              </p>
+              <div class="review-meta">
+                <strong>Priya & Arjun</strong>
+                <span>Frisco, Texas</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-copy">
+                “We were worried about the logistics more than anything. Instead, it felt smooth, thoughtful, and beautifully handled from start to finish.”
+              </p>
+              <div class="review-meta">
+                <strong>Meena Family</strong>
+                <span>Plano, Texas</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-copy">
+                “It was important to us that the blessing feel proper but not stressful. That balance is exactly what made the experience so special.”
+              </p>
+              <div class="review-meta">
+                <strong>Sanjay & Kavya</strong>
+                <span>Prosper, Texas</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container service-band">
+          <div>
+            <div class="kicker">What families can expect</div>
+            <h2>A thoughtful service, planned with care.</h2>
+            <div class="service-grid">
+              <article class="service-card">
+                <h3>What is included</h3>
+                <ul>
+                  <li>Pre-event planning and date review</li>
+                  <li>Guidance before the blessing</li>
+                  <li>Calm support on the day itself</li>
+                  <li>Clear communication throughout</li>
+                </ul>
+              </article>
+              <article class="service-card">
+                <h3>Planned around real family concerns</h3>
+                <ul>
+                  <li>Children, elders, and guest comfort</li>
+                  <li>Entry access and household flow</li>
+                  <li>Care for the home and surroundings</li>
+                  <li>Clarity about what happens next</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <aside class="service-area">
+            <div class="kicker" style="color:#f5d39d;">Service area</div>
+            <h3 style="font-size: 2rem; margin-top: 0.2rem;">Serving families across DFW.</h3>
+            <p style="margin-top: 0.9rem; color: rgba(246, 239, 229, 0.86);">
+              We confirm availability based on date, location, and the needs of the ceremony.
+            </p>
+            <div class="area-tags">
+              <span class="area-tag">Frisco</span>
+              <span class="area-tag">Plano</span>
+              <span class="area-tag">Allen</span>
+              <span class="area-tag">Irving</span>
+              <span class="area-tag">Richardson</span>
+              <span class="area-tag">McKinney</span>
+              <span class="area-tag">Southlake</span>
+              <span class="area-tag">Prosper</span>
+            </div>
+            <p style="margin-top: 1rem; color: rgba(246, 239, 229, 0.75); font-size: 0.92rem;">
+              Availability is confirmed by date, access, and service radius.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="cta-section" id="quote">
+        <div class="container cta-shell">
+          <div class="cta-layout">
+            <div>
+              <div class="kicker">Questions and next steps</div>
+              <h2>Simple answers for an important decision.</h2>
+              <p class="leadish">
+                Before booking, most families want to know whether the blessing will fit their home, their timing, and the way they want the day to feel.
+              </p>
+              <div class="faq-stack">
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">Is this a priest or temple service?</button>
+                  <div class="faq-answer">
+                    <p>Gau Veda is a dedicated service for families who want a sacred cow blessing handled with care, planning, and respect.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">What if our home has space or access limitations?</button>
+                  <div class="faq-answer">
+                    <p>We talk through access, timing, and home setup before confirming the service so there are fewer surprises later.</p>
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" aria-expanded="false">How much do you explain before booking?</button>
+                  <div class="faq-answer">
+                    <p>Enough for your family to feel comfortable, informed, and ready for the next step.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lead-form">
+              <div class="form-head">
+                <div class="kicker">Request your date</div>
+                <h3>Tell us about your ceremony</h3>
+                <p class="leadish" style="margin-top:0.6rem; font-size:0.98rem;">We only ask for what helps us guide you well.</p>
+              </div>
+              <form id="leadForm">
+                <div class="field-row">
+                  <div>
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" placeholder="Priya Rao" required />
+                  </div>
+                  <div>
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(555) 555-0000" required />
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                  </div>
+                  <div>
+                    <label for="suburb">Suburb or ZIP</label>
+                    <input id="suburb" name="suburb" type="text" placeholder="Frisco, TX" required />
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div>
+                    <label for="date">Preferred date</label>
+                    <input id="date" name="date" type="date" required />
+                  </div>
+                  <div>
+                    <label for="guests">Household / guest size</label>
+                    <select id="guests" name="guests">
+                      <option>1–10</option>
+                      <option>11–20</option>
+                      <option>21–40</option>
+                      <option>40+</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label for="message">Anything we should know?</label>
+                  <textarea id="message" name="message" placeholder="Stairs, pets, timing constraints, apartment access, or anything important to your family"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Check availability</button>
+                <p class="micro-note">By submitting, you agree to booking and cancellation terms once the service is confirmed.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>Gau Veda — Premium Gau Pravesh service for Hindu families in DFW</div>
+        <div>hello@gauveda.com · (972) 549-0000</div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('.faq-question').forEach((button) => {
+        button.addEventListener('click', () => {
+          const item = button.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach((el) => el.classList.remove('open'));
+          document.querySelectorAll('.faq-question').forEach((el) => el.setAttribute('aria-expanded', 'false'));
+          if (!isOpen) {
+            item.classList.add('open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      document.getElementById('leadForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Inquiry captured. Connect this form to your backend or CRM before launch.');
+      });
+    </script>
+  </body>
+</html>
