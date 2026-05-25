@@ -134,7 +134,8 @@ button:disabled { cursor: wait; opacity: .72; transform: none !important; }
 .faq-item button { width: 100%; border: 0; background: transparent; display: flex; align-items: center; justify-content: space-between; padding: 24px 28px; color: var(--ink); cursor: pointer; }
 .faq-item h3 { font-size: 22px; }
 .faq-item p { max-height: 0; overflow: hidden; padding: 0 28px; opacity: 0; transition: max-height .3s ease-out, padding .3s ease-out, opacity .3s ease-out; }
-.faq-item.open p { max-height: 200px; padding: 0 28px 24px; opacity: 1; }
+.faq-item p a { color: var(--primary); font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.faq-item.open p { max-height: 260px; padding: 0 28px 24px; opacity: 1; }
 .faq-item .material-symbols-outlined { transition: transform .3s ease; }
 .faq-item.open .material-symbols-outlined { transform: rotate(180deg); }
 .page-hero, .blog-hero { padding: 92px 0 58px; text-align: center; }

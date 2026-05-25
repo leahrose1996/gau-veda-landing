@@ -38,9 +38,16 @@ function Link({ href, children, className = '', onClick }) {
       onClick={(event) => {
         if (href.startsWith('/')) {
           event.preventDefault();
+          const hash = href.includes('#') ? href.split('#')[1] : '';
           window.history.pushState({}, '', href);
           window.dispatchEvent(new PopStateEvent('popstate'));
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          window.setTimeout(() => {
+            if (hash) {
+              document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }, 0);
         }
         onClick?.(event);
       }}
@@ -244,7 +251,7 @@ function InquirySection({ className = '' } = {}) {
       <div className="container inquiry-card">
         <aside className="inquiry-side">
           <h2>Invite the Divine</h2>
-          <p>Begin the journey of a sacred home blessing. Our team will coordinate with you to find a perfect time.</p>
+          <p>Planning a housewarming puja, pooja, Griha Pravesh, or Gau Mata blessing? Share your ceremony date, city, and preferred time, and our team will help coordinate to meet your needs.</p>
           <div className="contact-line"><span className="material-symbols-outlined">location_on</span>Dallas-Fort Worth Area</div>
         </aside>
         <form className="inquiry-form" onSubmit={handleInquirySubmit}>
@@ -283,10 +290,16 @@ function FinalCta({ className = '' } = {}) {
 }
 
 const faqs = [
+  [
+    'Do you only do housewarmings?',
+    <>
+      No! we perform cow puja / pooja for any sacred occasion. Temple visits, community festivals, coming-of-age ceremonies, weddings, business openings, school cultural days, and wellness events. If you want to invite the energy of the sacred cow, we can make it happen. <Link href="/contact#inquiry">Contact us</Link> to plan your puja.
+    </>,
+  ],
   ['What is a cow blessing?', "It's a beautiful tradition where a sacred cow is invited to step into your new home first. It's meant to bring peace and good energy to the family and the space."],
   ['How do you handle cleanup?', 'We take care of everything. We use floor protection and our team cleans up immediately, leaving your home exactly as it was, just with a new blessing.'],
   ['Where do you travel in DFW?', 'We serve the entire Dallas-Fort Worth area, including Frisco, Plano, McKinney, and surrounding suburbs.'],
-  ['How far in advance should I book?', 'We suggest reaching out 2-3 weeks before your move-in date to ensure we can find a time that works for you.'],
+  ['How far in advance should I book?', 'We suggest reaching out 2-3 weeks in advance to ensure we can find a time that works for you.'],
 ];
 
 function FaqSection({ compact = false, className = '' }) {
