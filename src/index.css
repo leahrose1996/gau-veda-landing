@@ -121,6 +121,8 @@ input, textarea { width: 100%; border: 0; border-bottom: 1px solid rgba(117,91,0
 input:focus, textarea:focus { border-bottom-color: var(--primary); background: #fbfaf6; box-shadow: 0 10px 24px rgba(117,91,0,.08); }
 textarea { min-height: 108px; resize: vertical; }
 .form-status { color: var(--primary); font-weight: 700; }
+.form-status-error { color: #a5391f; }
+button:disabled { cursor: wait; opacity: .72; transform: none !important; }
 .final-cta { position: relative; text-align: center; border: 1px solid rgba(209,197,173,.72); border-radius: 18px; padding: 58px 28px; overflow: hidden; background: rgba(255,255,255,.42); }
 .final-cta h2 { color: var(--primary); }
 .final-cta p { max-width: 760px; margin: 18px auto 28px; }

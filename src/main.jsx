@@ -13,6 +13,7 @@ const nav = [
 
 const serviceAreas = ['Dallas', 'Fort Worth', 'Frisco', 'Irving', 'Southlake', 'Plano'];
 const facebookUrl = 'https://www.facebook.com/profile.php?id=61572066505806';
+const formspreeEndpoint = 'https://formspree.io/f/mlgvplqj';
 
 const routes = {
   '/': 'home',
@@ -216,7 +217,28 @@ function PearlSection({ className = '' } = {}) {
 }
 
 function InquirySection({ className = '' } = {}) {
-  const [sent, setSent] = useState(false);
+  const [formStatus, setFormStatus] = useState('idle');
+
+  async function handleInquirySubmit(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    setFormStatus('sending');
+
+    try {
+      const response = await fetch(formspreeEndpoint, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (!response.ok) throw new Error('Form submission failed');
+      form.reset();
+      setFormStatus('sent');
+    } catch (error) {
+      setFormStatus('error');
+    }
+  }
+
   return (
     <section className={`section inquiry-section ${className}`} id="inquiry">
       <div className="container inquiry-card">
@@ -224,17 +246,23 @@ function InquirySection({ className = '' } = {}) {
           <h2>Invite the Divine</h2>
           <p>Begin the journey of a sacred home blessing. Our team will coordinate with you to find a perfect time.</p>
           <div className="contact-line"><span className="material-symbols-outlined">location_on</span>Dallas-Fort Worth Area</div>
-          <div className="contact-line"><span className="material-symbols-outlined">mail</span>namaste@sacredcowblessing.com</div>
         </aside>
-        <form className="inquiry-form" onSubmit={(event) => { event.preventDefault(); setSent(true); }}>
+        <form className="inquiry-form" onSubmit={handleInquirySubmit}>
           <div className="form-row">
-            <label>Full Name<input placeholder="Name" required /></label>
-            <label>Location in DFW<input placeholder="City" required /></label>
+            <label>Full Name<input name="name" placeholder="Name" required /></label>
+            <label>Email<input name="email" type="email" placeholder="you@example.com" required /></label>
           </div>
-          <label>Preferred Ceremony Date<input type="date" required /></label>
-          <label>Special Notes<textarea placeholder="Tell us about your new home..." /></label>
-          <button className="button button-dark" type="submit">Send Inquiry</button>
-          {sent && <p className="form-status">Thank you. We received your inquiry and will follow up to confirm availability.</p>}
+          <div className="form-row">
+            <label>Phone<input name="phone" type="tel" placeholder="Phone number" required /></label>
+            <label>Location<input name="location" placeholder="City" required /></label>
+          </div>
+          <label>Preferred Ceremony Date<input name="preferred_date" type="date" required /></label>
+          <label>Special Notes<textarea name="notes" placeholder="Feel free to add any extra info here" /></label>
+          <button className="button button-dark" type="submit" disabled={formStatus === 'sending'}>
+            {formStatus === 'sending' ? 'Sending...' : 'Send Inquiry'}
+          </button>
+          {formStatus === 'sent' && <p className="form-status">Thank you. We received your inquiry and will follow up to confirm availability.</p>}
+          {formStatus === 'error' && <p className="form-status form-status-error">Something went wrong. Please try again or use the chat button to reach us.</p>}
         </form>
       </div>
     </section>
