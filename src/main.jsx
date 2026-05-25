@@ -12,6 +12,7 @@ const nav = [
 ];
 
 const serviceAreas = ['Dallas', 'Fort Worth', 'Frisco', 'Irving', 'Southlake', 'Plano'];
+const facebookUrl = 'https://www.facebook.com/profile.php?id=61572066505806';
 
 const routes = {
   '/': 'home',
@@ -111,13 +112,17 @@ function Footer() {
         <div className="footer-list">
           <h4>Support</h4>
           <Link href="/contact">Contact</Link>
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="#privacy">Privacy Policy</a>
           <a href="#terms">Terms of Service</a>
         </div>
       </div>
       <div className="container footer-bottom">
         <p>© 2024 Sacred Cow Blessing. A beautiful start for your new home.</p>
-        <div className="footer-icons" aria-hidden="true"><span>share</span><span>favorite</span></div>
+        <div className="footer-icons">
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer" aria-label="Follow Pearl the Brahma on Facebook" className="social-icon facebook-icon">f</a>
+          <span aria-hidden="true" className="material-symbols-outlined">favorite</span>
+        </div>
       </div>
     </footer>
   );
@@ -198,6 +203,12 @@ function PearlSection({ className = '' } = {}) {
           <img className="gallery-main" src={`${A}griha-pravesh.jpg`} alt="Griha Pravesh ceremony details" />
           <img src={`${A}rangoli-diyas.jpg`} alt="Rangoli and diya lamps prepared for blessing" />
           <img src={`${A}brahman-cow.jpg`} alt="Pearl the gentle Brahma cow" />
+        </div>
+        <div className="pearl-social-cta">
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer" className="button facebook-follow-button">
+            <span className="facebook-mini" aria-hidden="true">f</span>
+            Follow Pearl the Brahma
+          </a>
         </div>
       </div>
     </section>
