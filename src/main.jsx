@@ -5,14 +5,15 @@ import './index.css';
 const A = '/assets/';
 
 const nav = [
-  ['/', 'The Tradition'],
+  ['/', 'Home'],
   ['/ceremony', 'The Process'],
-  ['/locations', 'Gallery'],
+  ['/#gallery', 'Gallery'],
   ['/blog', 'Blog'],
 ];
 
 const serviceAreas = ['Dallas', 'Fort Worth', 'Frisco', 'Irving', 'Southlake', 'Plano'];
 const facebookUrl = 'https://www.facebook.com/profile.php?id=61572066505806';
+const whatsappPlaceholderUrl = '#whatsapp-placeholder';
 const formspreeEndpoint = 'https://formspree.io/f/mlgvplqj';
 
 const routes = {
@@ -150,12 +151,16 @@ function Home() {
         <div className="container hero-content">
           <h1>Bring a Gentle Blessing to<br />Your New Home</h1>
           <p>We bring a gentle Brahma cow to your doorstep for a unique and meaningful blessing. Perfect for families starting their next chapter in Texas.</p>
-          <Link href="/contact" className="button button-saffron">Check Availability</Link>
+          <div className="hero-actions">
+            <Link href="/contact" className="button button-saffron">Check Availability</Link>
+            <a href={whatsappPlaceholderUrl} className="whatsapp-button hero-whatsapp-button" aria-label="WhatsApp placeholder button">Message us on WhatsApp</a>
+          </div>
         </div>
       </section>
       <TraditionSection className="reveal" />
-      <ExperienceSection className="reveal" />
+      <ExperienceSection className="reveal home-experience" />
       <PearlSection className="reveal" />
+      <PricingSection className="reveal" />
       <InquirySection className="reveal" />
       <FinalCta className="reveal" />
       <FaqSection compact className="reveal" />
@@ -180,12 +185,15 @@ function TraditionSection({ className = '' } = {}) {
   );
 }
 
-function ExperienceSection({ className = '' } = {}) {
+function ExperienceSection({ className = '', includeCeremonyExamples = false } = {}) {
   const revealSteps = className.includes('reveal');
+  const stepOneBody = includeCeremonyExamples ? (
+    <>Share your date, location, and the type of ceremony or gathering you are planning.<br /><br />Pearl can be included in many meaningful moments, including Griha Pravesh, pujas, house blessings, business openings, temple events, and family celebrations.</>
+  ) : 'Share your date, location, and the type of ceremony or gathering you are planning.';
   const steps = [
-    ['01', "Let us know when you're moving in", "Let us know when you're moving in and where you are in DFW. We'll help find the best time for the visit."],
-    ['02', 'We handle the details', 'We handle all the setup and cleaning. You just focus on your family and the moment.'],
-    ['03', 'A peaceful visit', "On the day of, we'll arrive and guide you through the whole process. It's calm, respectful, and special for the whole family."],
+    ['01', 'Tell us about your ceremony', stepOneBody],
+    ['02', 'Prepare for Pearl’s Visit', 'We’ll confirm the timing, location, and setup before Pearl’s visit.'],
+    ['03', 'A peaceful visit', "On the day of, Pearl and a handler will arrive and guide you through the whole process. It's calm, respectful, and special for the whole family."],
   ];
   return (
     <section className={`section alt-section ${className}`} id="process">
@@ -223,6 +231,66 @@ function PearlSection({ className = '' } = {}) {
   );
 }
 
+function PricingSection({ className = '' } = {}) {
+  const includedItems = [
+    'Pearl the Brahma cow',
+    'Trained handler',
+    'Includes first hour on-site',
+    'Calm arrival and departure',
+    'Simple preparation guidance',
+  ];
+
+  return (
+    <section className={`section pricing-section ${className}`}>
+      <div className="container pricing-container">
+        <header className="pricing-header">
+          <Eyebrow>Pricing</Eyebrow>
+          <h2>Simple Pricing</h2>
+          <p>Simple pricing for Pearl’s ceremony visit, with optional photo and video add-ons coming soon.</p>
+        </header>
+
+        <article className="pricing-card">
+          <div className="pricing-card-head">
+            <h3>Pearl Ceremony Visit</h3>
+            <strong>Starting at $500</strong>
+            <p>Includes Pearl, her handler, arrival coordination, and includes first hour on-site.</p>
+          </div>
+
+          <ul className="pricing-included-list">
+            {includedItems.map((item) => (
+              <li key={item}>
+                <span className="material-symbols-outlined" aria-hidden="true">check_circle</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <div className="pricing-card-footer">
+            <p><strong>Additional time:</strong> $250 per additional hour</p>
+            <small>Travel fees may apply depending on location.</small>
+          </div>
+
+          <Link href="/contact#inquiry" className="button button-dark pricing-button">Request Availability</Link>
+        </article>
+
+        <div className="pricing-addons">
+          <h3>Coming Soon: Ceremony Add-Ons</h3>
+          <div className="pricing-addons-grid">
+            <article>
+              <h4>Professional Photography</h4>
+              <p>Capture the meaningful moments with polished ceremony photos your family can keep and share.</p>
+            </article>
+            <article>
+              <h4>Professional Videography</h4>
+              <p>Preserve Pearl’s visit and your ceremony with a professionally filmed video.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function InquirySection({ className = '' } = {}) {
   const [formStatus, setFormStatus] = useState('idle');
 
@@ -253,6 +321,10 @@ function InquirySection({ className = '' } = {}) {
           <h2>Invite the Divine</h2>
           <p>Planning a housewarming puja, pooja, Griha Pravesh, or Gau Mata blessing? Share your ceremony date, city, and preferred time, and our team will help coordinate to meet your needs.</p>
           <div className="contact-line"><span className="material-symbols-outlined">location_on</span>Dallas-Fort Worth Area</div>
+          <a href={whatsappPlaceholderUrl} className="whatsapp-button whatsapp-button-side" aria-label="WhatsApp placeholder button">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.432h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+            Message on WhatsApp
+          </a>
         </aside>
         <form className="inquiry-form" onSubmit={handleInquirySubmit}>
           <div className="form-row">
@@ -265,9 +337,15 @@ function InquirySection({ className = '' } = {}) {
           </div>
           <label>Preferred Ceremony Date<input name="preferred_date" type="date" required /></label>
           <label>Special Notes<textarea name="notes" placeholder="Feel free to add any extra info here" /></label>
-          <button className="button button-dark" type="submit" disabled={formStatus === 'sending'}>
-            {formStatus === 'sending' ? 'Sending...' : 'Send Inquiry'}
-          </button>
+          <div className="form-actions">
+            <button className="button button-dark" type="submit" disabled={formStatus === 'sending'}>
+              {formStatus === 'sending' ? 'Sending...' : 'Send Inquiry'}
+            </button>
+            <a href={whatsappPlaceholderUrl} className="whatsapp-button" aria-label="WhatsApp placeholder button">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.432h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+              WhatsApp
+            </a>
+          </div>
           {formStatus === 'sent' && <p className="form-status">Thank you. We received your inquiry and will follow up to confirm availability.</p>}
           {formStatus === 'error' && <p className="form-status form-status-error">Something went wrong. Please try again or use the chat button to reach us.</p>}
         </form>
@@ -296,8 +374,7 @@ const faqs = [
       No! we perform cow puja / pooja for any sacred occasion. Temple visits, community festivals, coming-of-age ceremonies, weddings, business openings, school cultural days, and wellness events. If you want to invite the energy of the sacred cow, we can make it happen. <Link href="/contact#inquiry">Contact us</Link> to plan your puja.
     </>,
   ],
-  ['What is a cow blessing?', "It's a beautiful tradition where a sacred cow is invited to step into your new home first. It's meant to bring peace and good energy to the family and the space."],
-  ['How do you handle cleanup?', 'We take care of everything. We use floor protection and our team cleans up immediately, leaving your home exactly as it was, just with a new blessing.'],
+  ['What is a cow blessing?', "A cow blessing is a gentle sacred-cow visit for a meaningful milestone or ceremony — a new home, wedding, family celebration, business opening, temple/community event, or any occasion where you want to welcome peace, auspicious energy, and Pearl’s calming presence."],
   ['Where do you travel in DFW?', 'We serve the entire Dallas-Fort Worth area, including Frisco, Plano, McKinney, and surrounding suburbs.'],
   ['How far in advance should I book?', 'We suggest reaching out 2-3 weeks in advance to ensure we can find a time that works for you.'],
 ];
@@ -341,21 +418,95 @@ function About() {
 function Ceremony() {
   return (
     <>
-      <PageHero eyebrow="Ceremony" title="A calm process for a meaningful first step." body="From timing to arrival to cleanup, the experience follows the same quiet rhythm as the Stitch homepage: simple, spacious, respectful, and family-first." />
-      <ExperienceSection />
-      <section className="section"><div className="container cards-grid"><InfoCard title="Before the day" text="Share your date, address, access notes, priest timing, and anything your family wants us to know." /><InfoCard title="During the visit" text="Pearl arrives calmly, the entry is protected, and the family has room to observe the blessing." /><InfoCard title="After the blessing" text="Our team handles cleanup immediately and leaves your home ready for the rest of the ceremony." /></div></section>
+      <PageHero eyebrow="Ceremony" title="A calm process for a meaningful first step." body="From timing to arrival to Pearl’s calm departure, the experience is simple, spacious, respectful, and family-first." />
+      <ExperienceSection includeCeremonyExamples />
+      <section className="section"><div className="container cards-grid"><InfoCard title="Before the day" text="Share your date, address, access notes, priest timing, and anything your family wants us to know." /><InfoCard title="During the visit" text="Pearl arrives calmly, the entry is protected, and the family has room to observe the blessing." /><InfoCard title="After the blessing" text="We guide Pearl out calmly and respectfully, so your family can continue the rest of the ceremony or celebration." /></div></section>
       <InquirySection />
     </>
   );
 }
 
 function Locations() {
-  const cities = ['Frisco', 'Plano', 'McKinney', 'Allen', 'Prosper', 'Irving', 'Richardson', 'Southlake', 'Dallas', 'Fort Worth'];
+  const cities = ['Plano', 'Frisco', 'Southlake', 'McKinney', 'Fort Worth', 'Highland Park', 'Arlington', 'Dallas', 'Irving', 'Richardson', 'Allen', 'Prosper'];
+  const milestones = [
+    ['temple_hindu', 'Sacred Presence', "We'll bring Pearl to your location, ready for your family's ceremony, milestone, wedding, business opening, or new-home blessing."],
+    ['stars', 'Grounded Guidance', 'Texas-friendly coordination that keeps the experience simple, calm, respectful, and meaningful for everyone gathered.'],
+  ];
   return (
     <>
-      <PageHero eyebrow="Locations / Service Area" title="Serving families across Dallas-Fort Worth." body="We confirm availability based on date, access, safety, parking, household flow, and the needs of your ceremony." />
-      <section className="section"><div className="container service-area-page"><div><Eyebrow>Dallas-Fort Worth Area</Eyebrow><h2>Tell us where your new home is.</h2><p>We regularly review requests across DFW suburbs and surrounding communities. If your city is nearby, send the details and we will let you know what is realistic.</p><Link href="/contact" className="button button-dark">Request Availability</Link></div><div className="city-pills">{cities.map((city) => <span key={city}>{city}</span>)}</div></div></section>
-      <FinalCta />
+      <section className="locations-hero">
+        <div className="locations-hero-bg" />
+        <div className="locations-hero-glow" />
+        <div className="container locations-hero-content reveal reveal-visible">
+          <div className="locations-badge"><span className="material-symbols-outlined">location_on</span>Dallas-Fort Worth</div>
+          <h1>Sacred Cow Blessing in <span>DFW</span></h1>
+          <p>Bringing the peaceful energy of Pearl to homes, temples, businesses, schools, weddings, and family celebrations across the Dallas-Fort Worth area.</p>
+          <div className="locations-hero-actions">
+            <Link href="/contact#inquiry" className="button button-saffron">Check Availability</Link>
+            <Link href="/contact" className="button locations-outline-button">Contact Us</Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="locations-divider" aria-hidden="true"><span className="material-symbols-outlined">eco</span></div>
+
+      <section className="section locations-service-section">
+        <div className="container locations-bento">
+          <article className="locations-service-card locations-service-card-large">
+            <div>
+              <h2>Texas-friendly service areas</h2>
+              <p>We bring the Gau Pravesh tradition directly to your doorstep across Dallas-Fort Worth and nearby North Texas communities.</p>
+              <div className="locations-city-pills">{cities.map((city) => <span key={city}>{city}</span>)}<span>and more</span></div>
+            </div>
+            <span className="material-symbols-outlined locations-map-watermark" aria-hidden="true">map</span>
+          </article>
+          <article className="locations-service-card locations-support-card">
+            <h3>Local Support</h3>
+            <p>We respectfully provide a cow visit and experienced handler for families already observing Hindu house-blessing traditions such as Gau Puja, Gau Pravesh, or Griha Pravesh in the DFW area.</p>
+            <span className="material-symbols-outlined" aria-hidden="true">support_agent</span>
+          </article>
+        </div>
+      </section>
+
+      <section className="section locations-experience-section">
+        <div className="container locations-experience-grid">
+          <div className="locations-pearl-frame">
+            <img src={`${A}brahman-cow.jpg`} alt="Pearl the gentle Brahma cow prepared for a sacred blessing visit" />
+            <div className="locations-pearl-label"><small>Our Gentle Soul</small><strong>Meet Pearl</strong></div>
+          </div>
+          <article className="locations-experience-copy">
+            <Eyebrow>The Gau Pravesh Journey</Eyebrow>
+            <h2>We'll bring Pearl to you, with care and tradition.</h2>
+            <p>Our process is designed to be grounded and helpful. We understand the significance of your next milestone or celebration in Texas, and we help make Pearl's visit feel seamless, calm, and joyful for your family.</p>
+            <div className="locations-feature-list">
+              {milestones.map(([icon, title, text]) => (
+                <div className="locations-feature" key={title}>
+                  <span className="material-symbols-outlined" aria-hidden="true">{icon}</span>
+                  <div><h3>{title}</h3><p>{text}</p></div>
+                </div>
+              ))}
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="section locations-cta-section">
+        <div className="container locations-cta-card">
+          <span className="material-symbols-outlined locations-cta-watermark" aria-hidden="true">auto_awesome</span>
+          <h2>Bring peace to your celebration</h2>
+          <p>Our DFW team is here to help coordinate Pearl's presence for housewarmings, weddings, temple and community events, business openings, school cultural days, and other sacred occasions.</p>
+          <div className="locations-contact-strip">
+            <div>
+              <small>Start with availability</small>
+              <strong>Share your city, date, and ceremony notes.</strong>
+            </div>
+            <a href={whatsappPlaceholderUrl} className="whatsapp-button" aria-label="WhatsApp placeholder button">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.432 5.631 1.432h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+              Message us on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
