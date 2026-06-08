@@ -13,7 +13,7 @@ const nav = [
 
 const serviceAreas = ['Dallas', 'Fort Worth', 'Frisco', 'Irving', 'Southlake', 'Plano'];
 const facebookUrl = 'https://www.facebook.com/profile.php?id=61572066505806';
-const whatsappUrl = 'https://wa.me/18174015068?text=Hi%2C%20I%27m%20interested%20in%20scheduling%20Pearl%20for%20a%20sacred%20cow%20blessing.';
+const whatsappUrl = 'https://wa.me/18174015068?text=Hi%20there%21%20I%27d%20like%20to%20learn%20more%20and%20check%20availability%20for%20Pearl';
 const formspreeEndpoint = 'https://formspree.io/f/mlgvplqj';
 
 const routes = {
