@@ -252,7 +252,7 @@ function PricingSection({ className = '' } = {}) {
         <article className="pricing-card">
           <div className="pricing-card-head">
             <h3>Pearl Ceremony Visit</h3>
-            <strong>Starting at $500</strong>
+            <strong>Starting at $501</strong>
             <p>Includes Pearl, her handler, arrival coordination, and includes first hour on-site.</p>
           </div>
 
