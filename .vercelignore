@@ -6,7 +6,7 @@ agent-briefs
 reference
 stitch-reference
 docs
-assets
+/assets
 STITCH_SOURCE_OF_TRUTH_NOTES.md
 codex_*_prompt.md
 codex_*_handoff.md
