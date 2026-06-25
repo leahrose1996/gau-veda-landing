@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pearl the Brahma cow icon">
+  <rect width="64" height="64" rx="16" fill="#fbf3dd"/>
+  <circle cx="32" cy="35" r="21" fill="#fffaf0" stroke="#6f4a1f" stroke-width="2.5"/>
+  <path d="M17 23c-6-7-9-14-6-17 4-3 12 4 17 13" fill="#f4c430" stroke="#6f4a1f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 23c6-7 9-14 6-17-4-3-12 4-17 13" fill="#f4c430" stroke="#6f4a1f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 28c-7-3-13-2-15 3-2 6 4 12 13 13" fill="#d9a56f" stroke="#6f4a1f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M44 28c7-3 13-2 15 3 2 6-4 12-13 13" fill="#d9a56f" stroke="#6f4a1f" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M22 18c3-7 17-7 20 0-2 5-5 8-10 8s-8-3-10-8Z" fill="#e8d8bd" stroke="#6f4a1f" stroke-width="2"/>
+  <circle cx="24" cy="34" r="3" fill="#2b1b10"/>
+  <circle cx="40" cy="34" r="3" fill="#2b1b10"/>
+  <circle cx="25" cy="33" r="1" fill="#ffffff"/>
+  <circle cx="41" cy="33" r="1" fill="#ffffff"/>
+  <ellipse cx="32" cy="44" rx="10" ry="7" fill="#f1c7b1" stroke="#6f4a1f" stroke-width="2"/>
+  <circle cx="28" cy="44" r="1.6" fill="#6f4a1f"/>
+  <circle cx="36" cy="44" r="1.6" fill="#6f4a1f"/>
+  <path d="M27 50c3 2 7 2 10 0" fill="none" stroke="#6f4a1f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M48 12l1.4 3 3.1.5-2.2 2.2.5 3.1-2.8-1.5-2.8 1.5.5-3.1-2.2-2.2 3.1-.5L48 12Z" fill="#f4c430"/>
+</svg>
