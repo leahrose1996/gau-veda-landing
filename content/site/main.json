@@ -1,0 +1,379 @@
+{
+  "settings": {
+    "brandName": "Sacred Cow Blessing",
+    "footerBrandTitle": "GAU VEDA",
+    "footerBrandSubtitle": "SACRED BLESSINGS",
+    "facebookUrl": "https://www.facebook.com/profile.php?id=61572066505806",
+    "whatsappUrl": "https://wa.me/18174015068?text=Hi%20there%21%20I%27d%20like%20to%20learn%20more%20and%20check%20availability%20for%20Pearl",
+    "formspreeEndpoint": "https://formspree.io/f/mlgvplqj",
+    "serviceAreas": [
+      "Dallas",
+      "Fort Worth",
+      "Frisco",
+      "Irving",
+      "Southlake",
+      "Plano"
+    ]
+  },
+  "nav": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/ceremony",
+      "label": "The Process"
+    },
+    {
+      "href": "/#gallery",
+      "label": "Gallery"
+    },
+    {
+      "href": "/cow-visits-for-temple-events",
+      "label": "Services"
+    },
+    {
+      "href": "/blog",
+      "label": "Blog"
+    }
+  ],
+  "footer": {
+    "description": "Sacred Cow Blessing brings Pearl, a gentle Brahma cow, to homes, temples, weddings, businesses, and events across Dallas-Fort Worth for cow blessings, Gau Pravesh, cow puja, sacred ceremonies, and meaningful celebrations.",
+    "copyright": "© 2026 Sacred Cow Blessing. A beautiful start for your new home.",
+    "discoverLinks": [
+      {
+        "href": "/",
+        "label": "The Tradition"
+      },
+      {
+        "href": "/ceremony",
+        "label": "The Process"
+      },
+      {
+        "href": "/blog",
+        "label": "Blog"
+      },
+      {
+        "href": "/faq",
+        "label": "FAQ"
+      }
+    ],
+    "supportLinks": [
+      {
+        "href": "/contact",
+        "label": "Contact"
+      },
+      {
+        "href": "facebook",
+        "label": "Facebook"
+      },
+      {
+        "href": "#privacy",
+        "label": "Privacy Policy"
+      },
+      {
+        "href": "#terms",
+        "label": "Terms of Service"
+      }
+    ]
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "Bring a Gentle Blessing to",
+      "titleLine2": "Your New Home",
+      "body": "We bring a gentle Brahma cow to your doorstep for a unique and meaningful blessing. Perfect for families starting their next chapter in Texas.",
+      "primaryButton": "Check Availability",
+      "whatsappButton": "Message us on WhatsApp"
+    }
+  },
+  "tradition": {
+    "eyebrow": "Honoring Gaumata",
+    "title": "The Sacredness of Gau Pravesh",
+    "image": "brahman-cow.jpg",
+    "imageAlt": "Gentle Brahma cow prepared for a sacred blessing",
+    "paragraphs": [
+      "In many traditions, the cow is seen as a symbol of peace and motherhood. Having her step into your home first is a simple, beautiful way to bring good energy to your new space. We make it easy for families here in DFW to share in this peaceful ceremony.",
+      "Our service bridges ancient heritage with contemporary homeownership, providing a seamless and respectful experience for your family's new beginning."
+    ],
+    "signature": "Tradition in every step"
+  },
+  "experience": {
+    "eyebrow": "The Experience",
+    "title": "What to Expect",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Tell us about your ceremony",
+        "body": "Share your date, location, and the type of ceremony or gathering you are planning."
+      },
+      {
+        "number": "02",
+        "title": "Prepare for Pearl’s Visit",
+        "body": "We’ll confirm the timing, location, and setup before Pearl’s visit."
+      },
+      {
+        "number": "03",
+        "title": "A peaceful visit",
+        "body": "On the day of, Pearl and a handler will arrive and guide you through the whole process. It's calm, respectful, and special for the whole family."
+      }
+    ],
+    "ceremonyStepOneExtra": "Pearl can be included in many meaningful moments, including Griha Pravesh, pujas, house blessings, business openings, temple events, and family celebrations."
+  },
+  "pearl": {
+    "eyebrow": "Our Star",
+    "title": "Meet Pearl",
+    "badges": [
+      "Pure Brahma Breed",
+      "Gentle Cow"
+    ],
+    "images": [
+      {
+        "src": "/assets/DSC07401.jpg",
+        "alt": "Griha Pravesh ceremony details cow rental ",
+        "featured": true
+      },
+      {
+        "src": "/assets/DSC07391.jpg",
+        "alt": "Purebred Brahman dfw"
+      },
+      {
+        "src": "/assets/DSC07433.jpg",
+        "alt": "Pearl the gentle Brahma cow"
+      }
+    ],
+    "facebookButton": "Follow Pearl the Brahma"
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Simple Pricing",
+    "body": "Simple pricing for Pearl’s ceremony visit, with optional photo and video add-ons coming soon.",
+    "cardTitle": "Pearl Ceremony Visit",
+    "price": "Starting at $501",
+    "cardBody": "Includes Pearl, her handler, arrival coordination, and includes first hour on-site.",
+    "includedItems": [
+      "Pearl the Brahma cow",
+      "Trained handler",
+      "Includes first hour on-site",
+      "Calm arrival and departure",
+      "Simple preparation guidance"
+    ],
+    "additionalTimeLabel": "Additional time:",
+    "additionalTimeText": "$250 per additional hour",
+    "note": "Travel fees may apply depending on location.",
+    "button": "Request Availability",
+    "addonsTitle": "Coming Soon: Ceremony Add-Ons",
+    "addons": [
+      {
+        "title": "Professional Photography",
+        "body": "Capture the meaningful moments with polished ceremony photos your family can keep and share."
+      },
+      {
+        "title": "Professional Videography",
+        "body": "Preserve Pearl’s visit and your ceremony with a professionally filmed video."
+      }
+    ]
+  },
+  "inquiry": {
+    "title": "Invite Pearl to Your Ceremony or Event",
+    "body": "Planning a housewarming puja, pooja, Griha Pravesh, or Gau Mata blessing? Share your ceremony date, city, and preferred time, and our team will help coordinate to meet your needs.",
+    "locationLine": "Dallas-Fort Worth Area",
+    "whatsappButton": "Message on WhatsApp",
+    "fields": {
+      "name": "Full Name",
+      "namePlaceholder": "Name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "Phone number",
+      "location": "Location",
+      "locationPlaceholder": "City",
+      "date": "Preferred Ceremony Date",
+      "notes": "Special Notes",
+      "notesPlaceholder": "Feel free to add any extra info here"
+    },
+    "sendButton": "Send Inquiry",
+    "sendingButton": "Sending...",
+    "sentMessage": "Thank you. We received your inquiry and will follow up to confirm availability.",
+    "errorMessage": "Something went wrong. Please try again or use the chat button to reach us."
+  },
+  "finalCta": {
+    "title": "A beautiful start for your new home.",
+    "body": "Join the hundreds of families in Texas who have started their lives in a new space with the gentle blessings of Gaumata.",
+    "button": "Request Availability"
+  },
+  "faqs": {
+    "eyebrow": "Questions",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Do you only do housewarmings?",
+        "answer": "No! we perform cow puja / pooja for any sacred occasion. Temple visits, community festivals, coming-of-age ceremonies, weddings, business openings, school cultural days, and wellness events. If you want to invite the energy of the sacred cow, we can make it happen. Contact us to plan your puja."
+      },
+      {
+        "question": "What is a cow blessing?",
+        "answer": "A cow blessing is a gentle sacred-cow visit for a meaningful milestone or ceremony — a new home, wedding, family celebration, business opening, temple/community event, or any occasion where you want to welcome peace, auspicious energy, and Pearl’s calming presence."
+      },
+      {
+        "question": "Where do you travel in DFW?",
+        "answer": "We serve the entire Dallas-Fort Worth area, including Frisco, Plano, McKinney, and surrounding suburbs."
+      },
+      {
+        "question": "How far in advance should I book?",
+        "answer": "We suggest reaching out 2-3 weeks in advance to ensure we can find a time that works for you."
+      }
+    ]
+  },
+  "pages": {
+    "about": {
+      "hero": {
+        "eyebrow": "About Sacred Cow Blessing",
+        "title": "Ancient heritage, held with modern care.",
+        "body": "Sacred Cow Blessing exists to make Gau Pravesh feel peaceful, respectful, and beautifully coordinated for families beginning a new chapter in Texas."
+      },
+      "cards": [
+        {
+          "title": "Reverence",
+          "text": "Every ceremony is approached with warmth, seriousness, and respect for family tradition."
+        },
+        {
+          "title": "Ease",
+          "text": "We handle the visit details so your household can focus on the prayerful moment."
+        },
+        {
+          "title": "Care",
+          "text": "We plan around access, cleanup, elders, children, guests, and the feeling of the home."
+        }
+      ]
+    },
+    "ceremony": {
+      "hero": {
+        "eyebrow": "Ceremony",
+        "title": "A calm process for a meaningful first step.",
+        "body": "From timing to arrival to Pearl’s calm departure, the experience is simple, spacious, respectful, and family-first."
+      },
+      "cards": [
+        {
+          "title": "Before the day",
+          "text": "Share your date, address, access notes, priest timing, and anything your family wants us to know."
+        },
+        {
+          "title": "During the visit",
+          "text": "Pearl arrives calmly, the entry is protected, and the family has room to observe the blessing."
+        },
+        {
+          "title": "After the blessing",
+          "text": "We guide Pearl out calmly and respectfully, so your family can continue the rest of the ceremony or celebration."
+        }
+      ]
+    },
+    "contact": {
+      "hero": {
+        "eyebrow": "Request Availability",
+        "title": "Begin the journey of a sacred home blessing.",
+        "body": "Share your date, location, and notes about your new home. The form is frontend-only for now, so this preview confirms the design and flow before backend wiring."
+      }
+    }
+  },
+  "locations": {
+    "badge": "Dallas-Fort Worth",
+    "title": "Sacred Cow Blessing in",
+    "titleAccent": "DFW",
+    "body": "Bringing the peaceful energy of Pearl to homes, temples, businesses, schools, weddings, and family celebrations across the Dallas-Fort Worth area.",
+    "primaryButton": "Check Availability",
+    "secondaryButton": "Contact Us",
+    "serviceTitle": "Texas-friendly service areas",
+    "serviceBody": "We bring the Gau Pravesh tradition directly to your doorstep across Dallas-Fort Worth and nearby North Texas communities.",
+    "cities": [
+      "Plano",
+      "Frisco",
+      "Southlake",
+      "McKinney",
+      "Fort Worth",
+      "Highland Park",
+      "Arlington",
+      "Dallas",
+      "Irving",
+      "Richardson",
+      "Allen",
+      "Prosper"
+    ],
+    "citiesSuffix": "and more",
+    "supportTitle": "Local Support",
+    "supportBody": "We respectfully provide a cow visit and experienced handler for families already observing Hindu house-blessing traditions such as Gau Puja, Gau Pravesh, or Griha Pravesh in the DFW area.",
+    "image": "brahman-cow.jpg",
+    "imageAlt": "Pearl the gentle Brahma cow prepared for a sacred blessing visit",
+    "imageSmallLabel": "Our Gentle Soul",
+    "imageLabel": "Meet Pearl",
+    "journeyEyebrow": "The Gau Pravesh Journey",
+    "journeyTitle": "We'll bring Pearl to you, with care and tradition.",
+    "journeyBody": "Our process is designed to be grounded and helpful. We understand the significance of your next milestone or celebration in Texas, and we help make Pearl's visit feel seamless, calm, and joyful for your family.",
+    "features": [
+      {
+        "icon": "temple_hindu",
+        "title": "Sacred Presence",
+        "text": "We'll bring Pearl to your location, ready for your family's ceremony, milestone, wedding, business opening, or new-home blessing."
+      },
+      {
+        "icon": "stars",
+        "title": "Grounded Guidance",
+        "text": "Texas-friendly coordination that keeps the experience simple, calm, respectful, and meaningful for everyone gathered."
+      }
+    ],
+    "ctaTitle": "Bring peace to your celebration",
+    "ctaBody": "Our DFW team is here to help coordinate Pearl's presence for housewarmings, weddings, temple and community events, business openings, school cultural days, and other sacred occasions.",
+    "ctaSmall": "Start with availability",
+    "ctaStrong": "Share your city, date, and ceremony notes.",
+    "whatsappButton": "Message us on WhatsApp"
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Our Journal",
+      "title": "Sacred Cow Blessing Blog",
+      "body": "Simple guides for families planning cow blessing visits, Hindu ceremonies, house blessings, pujas, and temple events in Dallas-Fort Worth."
+    },
+    "posts": [
+      {
+        "category": "Pearl",
+        "time": "2 min read",
+        "title": "Meet Pearl, Our Gentle Brahman Cow for Ceremonies in Dallas-Fort Worth",
+        "text": "Pearl is the gentle purebred Brahman cow families welcome into house blessings, pujas, Griha Pravesh ceremonies, temple events, and meaningful celebrations across Dallas-Fort Worth. Learn her story and why her calm presence makes each visit so special.\n",
+        "image": "/assets/DSC07388.jpg",
+        "size": "featured"
+      },
+      {
+        "category": "Housewarming",
+        "time": "1 MIN READ",
+        "title": "Cow Blessing for Indian Housewarming Ceremonies in Dallas-Fort Worth",
+        "text": "For many families, welcoming a cow into a new home is a meaningful part of an Indian housewarming or Griha Pravesh ceremony. Learn how Pearl’s visit works, what to prepare, and how we support the day while your family or priest leads the ceremony.",
+        "image": "griha-pravesh.jpg",
+        "size": "secondary"
+      },
+      {
+        "category": "Guides",
+        "time": "",
+        "title": "Preparing Your Home for a Blessing",
+        "text": "Essential steps to create an auspicious environment for the arrival of grace, from entryway flow to family comfort.",
+        "image": "rangoli-diyas.jpg",
+        "size": "thirds"
+      },
+      {
+        "category": "Philosophy",
+        "time": "",
+        "title": "The Five Elements & Sacred Cows",
+        "text": "Understanding the elemental connection between Gaumata, the natural world, and a peaceful household.",
+        "image": "brahman-cow.jpg",
+        "size": "thirds"
+      }
+    ],
+    "featuredLinkText": "Read more",
+    "archiveTitle": "Want to know more?",
+    "archiveBody": "Feel free to reach out to ask a question ",
+    "archiveButton": "Ask a Question",
+    "newsletterEyebrow": "Stay Connected",
+    "newsletterTitle": "Join our community for updates",
+    "newsletterBody": "Under construction.... ",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterButton": "Subscribe",
+    "newsletterSmall": "We respect your peace. Unsubscribe at any time."
+  }
+}
